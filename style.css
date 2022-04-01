@@ -55,6 +55,15 @@ p {
     transition: background-color .4 s ease-in;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.500);
     font-size: 2rem;
+    text-shadow:
+    -1px -1px 0px #120078,
+    0px -1px 0px #120078,
+    1px -1px 0px #120078,
+   -1px  0px 0px #120078,
+    1px  0px 0px #120078,
+   -1px  1px 0px #120078,
+    0px  1px 0px #120078,
+    1px  1px 0px #120078;
 }
 
 .square:active {
@@ -119,13 +128,6 @@ p {
     letter-spacing: 0;
 }
 
-.toggle-visibility {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    visibility: hidden;
-}
 
 .result {
     letter-spacing: 1px;
@@ -159,6 +161,14 @@ footer a:hover {
 }
 
 /* JS */
+.toggle-visibility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    visibility: hidden;
+}
+
 .visible {
     visibility: visible;
 }
